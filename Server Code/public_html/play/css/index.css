@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'retro_gamingregular';
+    src: url('fonts/retro_gaming.woff2') format('woff2'),
+         url('fonts/retro_gaming.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.todo{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    
+}
+body {
+    margin:0;
+    padding:0;
+    background-image:url("camouflage_6_generated.jpg");
+}
+
+#gameCode{
+    text-align: center;
+    align-items: flex-start;
+    font-size: 90%;
+
+}
+#name{
+    text-align: center ;
+    align-items: center;
+    font-size: 90%;
+
+
+}
+
+.formName{
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+.error{
+}

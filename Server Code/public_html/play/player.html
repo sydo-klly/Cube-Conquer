@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html style="width:100% ; height:100%">
+
+
+  <head>
+    <title>Control</title>
+    <script src="player.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="tanke.ico" />
+  </head>
+  <body style="width:100% ; height:100%">
+    <div class="shit">
+      <div class="pantalla" style = "text-align:left">
+        <h1 class="pantalla_texto" style = "margin-left:5%" id="resum">
+          <span>Base origen: </span> 
+          <span id="origen"></span> 
+            <br> <br> 
+          <span>Base desti: </span> 
+          <span id="desti"></span> 
+            <br> <br> 
+          <span>Quantitat: </span> 
+          <span id="quantitat"></span> 
+          <br> <br>
+          <span id="sent"></span> 
+        </h1 >
+      </div>
+      <div class="teclat">
+        <div class="row">
+          <div class="column3">
+            <button id="A"  onclick="canvi(1)"><span class="letter">A</span></button>
+            
+          </div>
+          <div class="column3">
+            <button id="B"  onclick="canvi(2)"><span class="letter">B</span></button>
+            
+          </div>
+          <div class="column3">
+            <button id="C"  onclick="canvi(3)"><span class="letter">C</span></button>
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="column4">
+           <button id="G" onclick="canvi(7)"><span class="letter">G</span></button>
+            
+          </div>
+          <div class="column4">
+           <button id="F" onclick="canvi(6)"><span class="letter">F</span></button>
+            
+          </div>
+          <div class="column4">
+           <button id="E" onclick="canvi(5)"><span class="letter">E</span></button>
+            
+          </div>
+          <div class="column4">
+           <button id="D" onclick="canvi(4)"><span class="letter">D</span></button>
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="column3">
+           <button id="H" onclick="canvi(8)"><span class="letter">H</span></button>
+            
+          </div>
+          <div class="column3">
+           <button id="I" onclick="canvi(9)"><span class="letter">I</span></button>
+            
+          </div>
+          <div class="column3">
+            <button id="J" onclick="canvi(10)"><span class="letter">J</span></button>
+            
+          </div>
+        </div>
+
+
+       
+      </div>
+      <div class="tropes">
+        <table id = "rangs">
+          <tr>
+            <td><button id="nt" onclick="set(0)" value = "0" oninput="updateOnInput(this.value)"><span class="letter">0</span></button></td>
+            <td><button id="nt" onclick="set(50)" value = "50"  oninput="updateOnInput(this.value)"><span class="letter">50</span></button></td>
+            <td><button id="nt" onclick="set(100)" value = "100"  oninput="updateOnInput(this.value)"><span class="letter">100</span></button></td>
+          </tr>
+          <tr>
+            <td><button id="suma5" onclick="canvia(-5)" value = -5><span class="letter">-</span></button></td>
+            <td><button id="nt" onclick="set(-1)" value = "-1"><span class="letter">FULL</span></button></td>
+            <td><button id="suma5" onclick="canvia(5)" value = 5><span class="letter">+</span></button></td>
+          </tr>          
+        </table>
+      </div>
+      <div class="submit">
+        <td><button  class = "button" disabled = true id = "submitButton" onclick="execute()" value = "DEPLOY"></td>
+      </div>
+    </div>
+  </body>
+</html>
